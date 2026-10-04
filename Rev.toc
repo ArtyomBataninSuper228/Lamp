@@ -1,8 +1,9 @@
 \babel@toc {russian}{}\relax 
-\contentsline {section}{\numberline {1}Вращение пластины относительно своей оси}{3}{section.1}%
-\contentsline {section}{\numberline {2}Подъёмная сила}{3}{section.2}%
-\contentsline {section}{\numberline {3}Верхняя и нижняя фазы}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Верхняя фаза}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Нижняя фаза}{6}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Появление звука}{6}{section.4}%
-\contentsline {section}{\numberline {5}Примечание}{6}{section.5}%
+\contentsline {section}{\numberline {1}Суть задачи}{3}{section.1}%
+\contentsline {section}{\numberline {2}Теоретическое предположение}{3}{section.2}%
+\contentsline {section}{\numberline {3}Как проверить на практике}{4}{section.3}%
+\contentsline {section}{\numberline {4}Проектировка испытательной уствновки}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Подбор компонентов}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Разработка программного обеспечения}{4}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Проведение Эксперимента}{4}{section.5}%
+\contentsline {section}{\numberline {6}Результаты}{4}{section.6}%
