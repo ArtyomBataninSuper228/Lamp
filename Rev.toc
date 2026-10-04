@@ -6,4 +6,4 @@
 \contentsline {subsection}{\numberline {4.1}Подбор компонентов}{4}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Разработка программного обеспечения}{4}{subsection.4.2}%
 \contentsline {section}{\numberline {5}Проведение Эксперимента}{4}{section.5}%
-\contentsline {section}{\numberline {6}Результаты}{4}{section.6}%
+\contentsline {section}{\numberline {6}Результаты}{5}{section.6}%
