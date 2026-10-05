@@ -1,16 +1,16 @@
 void setup() {
   pinMode(PB4, OUTPUT); //Первый контакт реле
   pinMode(PB5, OUTPUT); //Второй контакт реле
-  pinMode(PB6, INPUT); //Измерение тока
-  pinMode(PB7, INPUT); //Измерение яркости
+  pinMode(PB0, INPUT); //Измерение тока
+  pinMode(PB1, INPUT); //Измерение яркости
   Serial.begin(2000000); //Старт COM порта
 
 }
 int a = 0;
 int f = 100000;
 float T = 0.25;
-short data_L[2500];
-short data_I[2500];
+short data_L[10000];
+short data_I[10000];
 
 
 void loop() {
@@ -21,11 +21,11 @@ void loop() {
   case 6824:// Начало измерений на первой спирали
     {
       digitalWrite(PB4, LOW);
-      for(int i = 0; i < 2500; i++){
-        data_L[i] = analogRead(PB6);
-        data_I[i] = analogRead(PB7);
+      for(int i = 0; i < 10000; i++){
+        data_L[i] = analogRead(PB0);
+        data_I[i] = analogRead(PB1);
       }
-      for(int i = 0; i < 25000; i++){
+      for(int i = 0; i < 10000; i++){
         Serial.print(data_L[i]);
         Serial.print(" ");
         Serial.println(data_L[i]);
@@ -36,11 +36,11 @@ void loop() {
     case 6825:// Начало измерений на второй спирали
     {
       digitalWrite(PB5, LOW);
-      for(int i = 0; i < 2500; i++){
-        data_L[i] = analogRead(PB6);
-        data_I[i] = analogRead(PB7);
+      for(int i = 0; i < 10000; i++){
+        data_L[i] = analogRead(PB0);
+        data_I[i] = analogRead(PB1);
       }
-      for(int i = 0; i < 2500; i++){
+      for(int i = 0; i < 10000; i++){
         Serial.print(data_L[i]);
         Serial.print(" ");
         Serial.println(data_L[i]);
@@ -50,9 +50,9 @@ void loop() {
     }
     case 6826:
     {
-      Serial.print(analogRead(PB6));
+      Serial.print(analogRead(PB0));
       Serial.print(" ");
-      Serial.println(analogRead(PB7));
+      Serial.println(analogRead(PB1));
     }
   }
 
