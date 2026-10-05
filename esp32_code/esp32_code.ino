@@ -48,6 +48,12 @@ void loop() {
 
       break;
     }
+    case 6826:
+    {
+      Serial.print(analogRead(PB6));
+      Serial.print(" ");
+      Serial.println(analogRead(PB7));
+    }
   }
 
 }
