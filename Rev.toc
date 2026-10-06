@@ -4,6 +4,6 @@
 \contentsline {section}{\numberline {3}Как проверить на практике}{4}{section.3}%
 \contentsline {section}{\numberline {4}Проектировка испытательной уствновки}{4}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Разработка программного обеспечения}{5}{subsection.4.1}%
-\contentsline {section}{\numberline {5}Проведение Эксперимента}{5}{section.5}%
-\contentsline {section}{\numberline {6}Результаты}{5}{section.6}%
-\contentsline {section}{\numberline {7}Вклады авторов}{5}{section.7}%
+\contentsline {section}{\numberline {5}Проведение Эксперимента}{7}{section.5}%
+\contentsline {section}{\numberline {6}Результаты}{7}{section.6}%
+\contentsline {section}{\numberline {7}Вклады авторов}{7}{section.7}%

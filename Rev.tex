@@ -36,8 +36,6 @@
 	\includegraphics[width=0.6\linewidth]{lump1.png}
 	\label{fig:spiral}
 	\centering
-	
-	
 \end{figure}
 
 
@@ -79,7 +77,29 @@
 \end{itemize}}
 
 \subsection{Разработка программного обеспечения}
+Для выполнения измерений было разработано ПО для микроконтроллера stm32f411 и для компьютера.
+Микроконтроллер управляет реле, сохраняет выборки в буфер и отправляет их на компьютер по serial port.
+ПО для него было сделано на языке c++. (Лежит в папке репозитория stm32code)
 
+{\begin{itemize}[label={---}]
+		\item Отображение графического интерфейса
+		\item Обмен командами управления с платой
+		\item хранение данных, построение графиков
+		\item Анализ данных
+\end{itemize}}
+ПО для пк состоит из следующих программ(папка python-code)
+{\begin{itemize}[label={---}]
+		\item pult - программа для управления установкой, сохранения файлов и изменения
+		\item grafic - программа для построения графиков и перевода значений из битов ацп в напряжение, которрое было на входе в ацп
+		\item noise-analyser - программа для анализа статистической неопределенности на основе измерений без лампочки. (оценки влияния тепловых шумов ацп, влиия помех, генерируемых реле при переключении, и  электромагнитных полей)
+\end{itemize}}
+
+\begin{figure}[h!]
+	\includegraphics[width=1\linewidth]{python_code/primer_gui.png}
+	\caption{Пример GUI}
+	\label{fig:gui}
+	\centering
+\end{figure}
 
 \section{Проведение Эксперимента}
 
@@ -95,7 +115,7 @@
 	
 	\caption{Cсылка на проект в github}
 	\includegraphics[width=0.6\linewidth]{QR.jpg}
-	\label{fig:spiral}
+	\label{fig:QR}
 	\centering
 		
 \end{figure}
