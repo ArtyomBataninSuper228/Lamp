@@ -91,8 +91,9 @@ class voltmeter:
 
 
 dpg.create_context()
+print(os.path.join(os.getcwd(), 'notomono-regular.ttf'))
 with dpg.font_registry():
-    with dpg.font('/Users/artembatanin/PycharmProjects/messenger/notomono-regular.ttf', 25, default_font=True, id="Default25"):
+    with dpg.font(os.path.join(os.getcwd(), 'notomono-regular.ttf'), 25, default_font=True, id="Default25"):
         dpg.add_font_range_hint(dpg.mvFontRangeHint_Cyrillic)
 dpg.bind_font("Default25")
 
