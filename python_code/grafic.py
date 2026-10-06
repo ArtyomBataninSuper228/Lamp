@@ -28,7 +28,7 @@ for i in os.listdir("experiment_data"):
     plt.errorbar(data[2], data[1], yerr=0.797/1024*3.3, fmt=".")
     plt.errorbar(data[2], data[0], yerr=0.497/1024*3.3, fmt=".")
     plt.xlabel("Время с")
-    plt.ylabel("Измеренное значение (Вольты)")
+    plt.ylabel("Измеренное значение (Вольт)")
     plt.savefig(os.path.join("experiment_data", "errors_"+i[:-5]+ ".png"), dpi = 300)
     plt.close()
 
@@ -37,6 +37,6 @@ for i in os.listdir("experiment_data"):
     plt.plot(data[2], data[1])
     plt.plot(data[2], data[0])
     plt.xlabel("Время с")
-    plt.ylabel("Измеренное значение")
+    plt.ylabel("Измеренное значение (Вольт)")
     plt.savefig(os.path.join("experiment_data",   i[:-5] + ".png"), dpi=300)
     plt.close()
