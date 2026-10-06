@@ -18,13 +18,17 @@ for i in os.listdir("experiment_data"):
     if(max(data[2]) >= 10):
         for j in range(len(data[2])):
             data[2][j] = data[2][j]/5000
+    for j in range(len(data[0])):
+        data[0][j] = data[0][j] / 1024*3.3
+        data[1][j] = data[1][j] / 1024 * 3.3
+
     f.close()
     plt.style.use('seaborn-v0_8-paper')
     plt.figure(figsize=(32, 18))
     plt.errorbar(data[2], data[1], yerr=0.797, fmt=".")
     plt.errorbar(data[2], data[0], yerr=0.497, fmt=".")
     plt.xlabel("Время с")
-    plt.ylabel("Измеренное значение")
+    plt.ylabel("Измеренное значение (Вольты)")
     plt.savefig(os.path.join("experiment_data", "errors_"+i[:-5]+ ".png"), dpi = 300)
     plt.close()
 
