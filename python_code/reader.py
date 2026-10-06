@@ -31,17 +31,21 @@ def do_exp_1():
     I = []
     L = []
     p = []
-    for j in range(10000):
+    total_t = int(ser.readline())
+
+    for j in range(20000):
         i, l = map(int, ser.readline().split())
         I.append(i)
         L.append(l)
-        p.append(j)
+        p.append(j*total_t/1000000/10000)
     doing_exp[0] = False
     Active_Data= [L, I, p]
+    doing_exp[0] = False
     dpg.set_value('Light_tag', [p, I])
     dpg.set_value('I_tag', [p, L])
-    dpg.set_axis_limits("x_axis", 0, 10000)
+    dpg.set_axis_limits("x_axis", 0, max(p))
     dpg.set_axis_limits("y_axis", 0, max(max(I), max(L)))
+
 def get_value():
     while doing_exp[0]:
         time.sleep(0.1)
@@ -118,7 +122,7 @@ with dpg.window(label="Lamp", width=1500, height=900, no_move=True, no_close=Tru
         dpg.add_plot_legend(location=100)
 
         # REQUIRED: create x and y axes
-        dpg.add_plot_axis(dpg.mvXAxis, label="Новмер выборки", tag = "x_axis")
+        dpg.add_plot_axis(dpg.mvXAxis, label="Время", tag = "x_axis")
         dpg.add_plot_axis(dpg.mvYAxis, label="Измеренное значение", tag="y_axis")
 
         # series belong to a y axis
